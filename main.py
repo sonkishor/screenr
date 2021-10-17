@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup as bs
 from pprint import pprint
 from csv import writer
 
-url = "https://www.screener.in/screens/6994/Low-on-10-year-average-earnings/"
+url = "https://www.screener.in/screens/214283/companies-creating-new-high/"
 
 request = requests.get(url)
 soup = bs(request.content, 'html.parser')
