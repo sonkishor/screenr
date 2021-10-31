@@ -3,12 +3,12 @@ from bs4 import BeautifulSoup as bs
 from pprint import pprint
 from csv import writer
 
-url = "https://www.screener.in/company/compare/00000062/?page=1"
+url = "https://www.screener.in/screens/15310/benjamin-graham-and-warren-buffett/"
 request = requests.get(url)
 soup = bs(request.content, 'html.parser')
 
 def scrape(page_no):
-    url = "https://www.screener.in/company/compare/00000062/?page={}".format(page_no)
+    url = "https://www.screener.in/screens/15310/benjamin-graham-and-warren-buffett/?page={}".format(page_no)
 
     request = requests.get(url)
     soup = bs(request.content, 'html.parser')
